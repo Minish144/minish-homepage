@@ -31,3 +31,14 @@ body {
     text-wrap: balance;
   }
 }
+
+.text-indent {
+  text-indent: 1em;
+}
+
+.underline-gray-custom-thick {
+  text-decoration: underline;
+  text-decoration-color: #525252;
+  text-decoration-thickness: 4px;
+  text-underline-offset: 6px;
+}
