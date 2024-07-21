@@ -13,4 +13,4 @@ docker:
 	docker rm homepage || true
 	docker rmi homepage || true
 	docker build . -t homepage
-	docker run -p 3000:3000 --name homepage homepage
+	docker run -d -p 3000:3000 --name homepage homepage
