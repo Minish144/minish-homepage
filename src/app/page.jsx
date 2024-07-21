@@ -9,10 +9,11 @@ import Menu from "@/components/Menu";
 import Personal from "@/components/Personal";
 import Web from "@/components/Web";
 import Work from "@/components/Work";
+import { Box } from "@chakra-ui/react";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center justify-between">
+    <Box as="main" className="flex flex-col items-center justify-between">
       <Menu />
       <Dog />
       <Hello />
@@ -22,6 +23,6 @@ export default function Home() {
       <Love />
       <Web />
       <Footer />
-    </main>
+    </Box>
   );
 }
