@@ -6,5 +6,4 @@ services:
       context: .
     ports:
       - "3000:3000"
-    container_name: homepage
     restart: unless-stopped
