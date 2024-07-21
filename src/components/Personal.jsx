@@ -5,7 +5,7 @@ function Personal() {
   return (
     <Container className="flex flex-col md:flex-row items-center md:items-start justify-between mb-5">
       <Box className="mb-5 md:mb-0">
-        <Heading>Nikolay Varlamov</Heading>
+        <Heading className="text-center md:text-left">Nikolay Varlamov</Heading>
         <p>Software engineer, hackathon participant</p>
       </Box>
       <Box
