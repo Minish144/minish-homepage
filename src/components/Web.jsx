@@ -1,9 +1,9 @@
 import { Link } from "@chakra-ui/next-js";
 import TitledLayout from "./layouts/titled";
-import LinkedinIcon from "./icons/Linkedin";
-import GithubIcon from "./icons/Github";
-import InstaIcon from "./icons/Insta";
-import TelegramIcon from "./icons/Telegram";
+import LinkedinIcon from "./icons/LinkedinIcon";
+import GithubIcon from "./icons/GithubIcon";
+import InstaIcon from "./icons/InstaIcon";
+import TelegramIcon from "./icons/TelegramIcon";
 import { Box } from "@chakra-ui/react";
 
 function Web() {

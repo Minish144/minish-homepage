@@ -1,6 +1,6 @@
 import { Link } from "@chakra-ui/next-js";
 import { Container } from "@chakra-ui/react";
-import GithubIcon from "./icons/Github";
+import GithubIcon from "./icons/GithubIcon";
 
 function Menu() {
   return (
