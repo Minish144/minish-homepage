@@ -40,8 +40,8 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`bg-base text-base`}>
         <Providers>{children}</Providers>
-        <GoogleAnalytics gaId={gaId} />
       </body>
+      <GoogleAnalytics gaId={gaId} />
     </html>
   );
 }
