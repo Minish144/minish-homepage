@@ -4,7 +4,7 @@ function Hello() {
   return (
     <Container>
       <Box className="text-center bg-gray_custom p-3 mb-5 rounded-lg">
-        Hello, I'm a backend developer based in Moscow!
+        Hello, I&apos;m a backend developer based in Moscow!
       </Box>
     </Container>
   );
