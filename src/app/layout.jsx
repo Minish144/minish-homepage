@@ -1,4 +1,4 @@
-import GoogleAnalytics from "@/components/Analytics";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 import { Providers } from "./providers";
 
@@ -33,12 +33,14 @@ export const viewport = {
   initialScale: 1,
 };
 
+const gaId = process.env.GOOGLE_MEASUREMENT_ID;
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`bg-base text-base`}>
-        <GoogleAnalytics />
         <Providers>{children}</Providers>
+        <GoogleAnalytics gaId={gaId} />
       </body>
     </html>
   );
