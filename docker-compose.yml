@@ -2,12 +2,6 @@ services:
   homepage:
     build:
       context: .
-    restart: unless-stopped
-
-  nginx-proxy:
-    image: nginxproxy/nginx-proxy
     ports:
       - "3000:3000"
     restart: unless-stopped
-    volumes:
-      - /var/run/docker.sock:/tmp/docker.sock:ro

@@ -24,7 +24,9 @@ docker-compose:
 	docker compose down
 	docker compose up --build -d
 
-# requires https://github.com/Wowu/docker-rollout/
+APP_NAME = homepage
 deploy:
-	docker compose build homepage
-	docker rollout homepage
+	docker-compose build $(APP_NAME)
+	docker-compose down
+	docker-compose up -d
+	docker images --filter=reference="homepage:*" -q | xargs -r docker rmi -f
