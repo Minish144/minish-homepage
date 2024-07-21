@@ -1,3 +1,8 @@
+ifneq (,$(wildcard ./.env))
+	include .env
+	export $(shell sed 's/=.*//' .env)
+endif
+
 run:
 	npm run dev
 
@@ -18,7 +23,7 @@ docker:
 	docker rm homepage || true
 	docker rmi homepage || true
 	docker build . -t homepage
-	docker run -d -p 3000:3000 --name homepage homepage
+	docker run -d -p 3000:3000 --name homepage --env-file .env homepage
 
 docker-compose:
 	docker compose down
