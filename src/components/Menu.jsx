@@ -1,6 +1,6 @@
 import { Link } from "@chakra-ui/next-js";
 import { Container } from "@chakra-ui/react";
-import GithubIcon from "./icons/github";
+import GithubIcon from "./icons/Github";
 
 function Menu() {
   return (
@@ -18,7 +18,7 @@ function Menu() {
         className="flex items-center ml-2 hover:text-gray-400"
       >
         <GithubIcon />
-        <span className="ml-1">Source</span>
+        <span className="ml-1.5">Source</span>
       </Link>
     </Container>
   );
