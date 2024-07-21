@@ -19,7 +19,7 @@ function Bio() {
 
       <Box className="mb-3 flex">
         <Box className="mr-4">
-          <Box className="font-bold">2021-</Box>
+          <Box className="font-bold">2022-</Box>
           <Box className="font-bold">now</Box>
         </Box>
         <Box>Working at Samokat.tech</Box>
