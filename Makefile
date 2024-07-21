@@ -26,7 +26,7 @@ docker-compose:
 
 APP_NAME = homepage
 deploy:
-	docker-compose build $(APP_NAME)
-	docker-compose down
-	docker-compose up -d
+	docker compose build $(APP_NAME)
+	docker compose down
+	docker compose up -d
 	docker images --filter=reference="homepage:*" -q | xargs -r docker rmi -f
