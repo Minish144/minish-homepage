@@ -26,5 +26,5 @@ docker-compose:
 
 # requires https://github.com/Wowu/docker-rollout/
 deploy:
-	docker compose build -f docker-compose.yml
-	docker rollout -f docker-compose.yml homepage
+	docker compose build homepage
+	docker rollout homepage
