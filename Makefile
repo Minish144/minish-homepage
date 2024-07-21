@@ -19,3 +19,11 @@ docker:
 	docker rmi homepage || true
 	docker build . -t homepage
 	docker run -d -p 3000:3000 --name homepage homepage
+
+docker-compose:
+	docker compose down
+	docker compose up --build -d
+
+# requires https://github.com/Wowu/docker-rollout/
+docker-rollout:
+	docker rollout -f docker-compose.yml homepage
