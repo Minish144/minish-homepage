@@ -7,6 +7,11 @@ prod:
 	mkdir -p .next/standalone/.next/static 
 	cp -a .next/static/. .next/standalone/.next/static 
 	cp -a public .next/standalone/public
+	node .next/standalone/server.js
+
+prod-clean:
+	rm -rf .next
+	make prod
 
 docker:
 	docker stop homepage || true
