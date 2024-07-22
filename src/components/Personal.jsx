@@ -24,6 +24,7 @@ function Personal() {
           loading="lazy"
           width={103}
           height={103}
+          quality={100}
         />
       </Box>
     </Container>

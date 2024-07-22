@@ -23,6 +23,7 @@ function Hackathons() {
             loading="lazy"
             width={(1280 * 1.1) / 4.5}
             height={960 / 4.5}
+            quality={100}
           />
         </Box>
 
@@ -43,6 +44,7 @@ function Hackathons() {
             loading="lazy"
             width={(1280 * 1.1) / 4.5}
             height={960 / 4.5}
+            quality={100}
           />
         </Box>
       </Box>
