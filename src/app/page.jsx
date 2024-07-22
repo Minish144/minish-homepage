@@ -3,6 +3,7 @@
 import Bio from "@/components/Bio";
 import Dog from "@/components/Dog";
 import Footer from "@/components/Footer";
+import Hackathons from "@/components/Hackathons";
 import Hello from "@/components/Hello";
 import Love from "@/components/Love";
 import Menu from "@/components/Menu";
@@ -20,6 +21,7 @@ export default function Home() {
       <Personal />
       <Work />
       <Bio />
+      <Hackathons />
       <Love />
       <Web />
       <Footer />
