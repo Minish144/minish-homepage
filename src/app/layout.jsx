@@ -26,6 +26,21 @@ export const metadata = {
       },
     ],
   },
+  robots: "index, follow",
+  keywords: [
+    "Nikolay Varlamov",
+    "Homepage",
+    "Software Engineer",
+    "Portfolio",
+    "Golang",
+    "Go",
+    "Backend",
+    "Nextjs",
+    "Senior developer",
+  ],
+  alternates: {
+    canonical: "https://www.minish.ru",
+  },
 };
 
 export const viewport = {
