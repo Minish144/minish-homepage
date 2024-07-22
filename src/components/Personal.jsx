@@ -12,8 +12,8 @@ function Personal() {
         borderColor="whiteAlpha.800"
         borderWidth={2}
         borderStyle="solid"
-        w="100px"
-        h="100px"
+        w="103px"
+        h="103px"
         display="inline-block"
         borderRadius="full"
         overflow="hidden"
@@ -22,8 +22,8 @@ function Personal() {
           src="/images/myphoto.jpg"
           alt="Profile image"
           loading="lazy"
-          width={100}
-          height={100}
+          width={103}
+          height={103}
         />
       </Box>
     </Container>
