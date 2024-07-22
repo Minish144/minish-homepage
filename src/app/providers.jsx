@@ -1,7 +1,7 @@
 "use client";
 
-import Fonts from "@/components/Fonts";
-import Theme from "@/components/Theme";
+import Fonts from "@/components/fonts";
+import Theme from "@/components/theme";
 import { ChakraProvider } from "@chakra-ui/react";
 
 export function Providers({ children }) {
