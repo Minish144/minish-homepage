@@ -5,7 +5,8 @@ function Gopher() {
     <Link href="https://go.dev/" isExternal={true}>
       <Image
         src="/images/gopher.gif"
-        alt="A cute dog"
+        alt="Cute jumping gohper"
+        unoptimized={true}
         loading="lazy"
         width={50}
         height={50}
