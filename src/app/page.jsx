@@ -1,7 +1,6 @@
 "use client";
 
 import Bio from "@/components/Bio";
-import Dog from "@/components/Dog";
 import Footer from "@/components/Footer";
 import Hackathons from "@/components/Hackathons";
 import Hello from "@/components/Hello";
@@ -11,12 +10,13 @@ import Personal from "@/components/Personal";
 import Web from "@/components/Web";
 import Work from "@/components/Work";
 import { Box } from "@chakra-ui/react";
+import Gopher from "@/components/Gopher";
 
 export default function Home() {
   return (
     <Box as="main" className="flex flex-col items-center justify-between">
       <Menu />
-      <Dog />
+      <Gopher />
       <Hello />
       <Personal />
       <Work />
