@@ -10,7 +10,7 @@ function Gopher() {
         loading="lazy"
         width={50}
         height={50}
-        className="mt-20 mr-72 animate-move"
+        className="mt-20 mr-72 animate-jump-inf"
       />
     </Link>
   );

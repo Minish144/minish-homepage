@@ -43,7 +43,7 @@ body {
   text-underline-offset: 6px;
 }
 
-@keyframes move {
+@keyframes jump {
   0% {
     transform: translate(0, 0);
   }
@@ -60,6 +60,21 @@ body {
     transform: translate(0, 0px);
   }
 }
-.animate-move {
-  animation: move 0.9s infinite;
+.animate-jump-inf {
+  animation: jump 0.9s infinite;
+}
+
+@keyframes appear {
+  0% {
+    transform: translateY(20px);
+    opacity: 0.1;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-appear {
+  animation: appear 1.8s;
 }

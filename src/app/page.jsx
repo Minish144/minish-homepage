@@ -14,17 +14,22 @@ import Gopher from "@/components/Gopher";
 
 export default function Home() {
   return (
-    <Box as="main" className="flex flex-col items-center justify-between">
-      <Menu />
-      <Gopher />
-      <Hello />
-      <Personal />
-      <Work />
-      <Bio />
-      <Hackathons />
-      <Love />
-      <Web />
-      <Footer />
+    <Box as="main">
+      <Box className="flex flex-col items-center justify-between">
+        <Menu />
+      </Box>
+
+      <Box className="flex flex-col items-center justify-between animate-appear">
+        <Gopher />
+        <Hello />
+        <Personal />
+        <Work />
+        <Bio />
+        <Hackathons />
+        <Love />
+        <Web />
+        <Footer />
+      </Box>
     </Box>
   );
 }
