@@ -34,5 +34,4 @@ deploy:
 	docker compose build $(APP_NAME)
 	docker compose down
 	docker compose up -d
-	docker images --filter=reference="homepage:*" -q | xargs -r docker rmi -f
-	docker rmi $(docker images --filter "dangling=true" -q --no-trunc)
+	docker image prune -f
