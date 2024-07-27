@@ -1,7 +1,7 @@
 import { GoogleAnalytics } from "@next/third-parties/google";
-import "./globals.css";
+import "../globals.css";
 import { Providers } from "./providers";
-import { getLocale, getMessages } from "next-intl/server";
+import { getMessages } from "next-intl/server";
 
 export const metadata = {
   title: "Nikolay Varlamov - Homepage",
@@ -51,8 +51,8 @@ export const viewport = {
 
 const gaId = process.env.GOOGLE_MEASUREMENT_ID;
 
-async function RootLayout({ children }) {
-  const locale = await getLocale();
+async function RootLayout({ children, params }) {
+  const locale = params.locale;
   const messages = await getMessages();
 
   return (
