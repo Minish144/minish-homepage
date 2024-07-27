@@ -3,6 +3,7 @@ import { Box, Container } from "@chakra-ui/react";
 import GithubIcon from "./icons/githubIcon";
 import { useTranslations } from "next-intl";
 import LanguageButton from "./LanguageButton";
+import ThemeButton from "./ThemeButton";
 
 function Menu() {
   const t = useTranslations("HomePage.Menu");
@@ -16,7 +17,8 @@ function Menu() {
       >
         {t("name")}
       </Link>
-      <Box className="flex items-center gap-0.5">
+      <Box className="flex items-center gap-1">
+        <ThemeButton className="mr-1" />
         <LanguageButton />
         <Link
           href="https://github.com/Minish144/minish-homepage"

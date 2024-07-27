@@ -56,8 +56,10 @@ async function RootLayout({ children, params }) {
   const messages = await getMessages();
 
   return (
-    <html lang={locale}>
-      <body className={`bg-base text-base`}>
+    <html lang={locale} suppressHydrationWarning>
+      <body
+        className={`bg-base dark:bg-dark_base text-base dark:text-dark_base`}
+      >
         <Providers messages={messages} locale={locale}>
           {children}
         </Providers>

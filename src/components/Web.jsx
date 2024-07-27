@@ -19,8 +19,8 @@ function Web() {
           sx={{ textDecoration: "none", ":hover": { textDecoration: "none" } }}
           className="flex items-center p-2 hover:bg-teal-400 hover:bg-opacity-15 rounded-md"
         >
-          <LinkedinIcon className="mr-2 text-teal-400" />
-          <span className="font-medium text-teal-400">@minish144</span>
+          <LinkedinIcon className="mr-2 dark:text-teal-400" />
+          <span className="font-medium dark:text-teal-400">@minish144</span>
         </Link>
 
         <Link
@@ -29,8 +29,8 @@ function Web() {
           sx={{ textDecoration: "none", ":hover": { textDecoration: "none" } }}
           className="flex items-center p-2 hover:bg-teal-400 hover:bg-opacity-15 rounded-md"
         >
-          <GithubIcon className="mr-2 text-teal-400" />
-          <span className="font-medium text-teal-400">@minish144</span>
+          <GithubIcon className="mr-2 dark:text-teal-400" />
+          <span className="font-medium dark:text-teal-400">@minish144</span>
         </Link>
 
         <Link
@@ -39,8 +39,8 @@ function Web() {
           sx={{ textDecoration: "none", ":hover": { textDecoration: "none" } }}
           className="flex items-center p-2 hover:bg-teal-400 hover:bg-opacity-15 rounded-md"
         >
-          <InstaIcon className="mr-2 text-teal-400" />
-          <span className="font-medium text-teal-400">@minish144</span>
+          <InstaIcon className="mr-2 dark:text-teal-400" />
+          <span className="font-medium dark:text-teal-400">@minish144</span>
         </Link>
 
         <Link
@@ -49,8 +49,8 @@ function Web() {
           sx={{ textDecoration: "none", ":hover": { textDecoration: "none" } }}
           className="flex items-center p-2 hover:bg-teal-400 hover:bg-opacity-15 rounded-md"
         >
-          <TelegramIcon className="mr-2 text-teal-400" />
-          <span className="font-medium text-teal-400">@minish144</span>
+          <TelegramIcon className="mr-2 dark:text-teal-400" />
+          <span className="font-medium dark:text-teal-400">@minish144</span>
         </Link>
       </Box>
     </TitledLayout>

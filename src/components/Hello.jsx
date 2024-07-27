@@ -6,7 +6,7 @@ function Hello() {
 
   return (
     <Container>
-      <Box className="text-center bg-gray_custom p-3 mb-5 rounded-lg">
+      <Box className="text-center bg-gray_custom dark:bg-dark_gray_custom p-3 mb-5 rounded-lg">
         {t("text")}
       </Box>
     </Container>
