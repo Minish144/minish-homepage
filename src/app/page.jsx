@@ -8,9 +8,9 @@ import Love from "@/components/Love";
 import Menu from "@/components/Menu";
 import Personal from "@/components/Personal";
 import Web from "@/components/Web";
-import Work from "@/components/Work";
 import { Box } from "@chakra-ui/react";
 import Gopher from "@/components/Gopher";
+import About from "@/components/About";
 
 export default function Home() {
   return (
@@ -23,7 +23,7 @@ export default function Home() {
         <Gopher />
         <Hello />
         <Personal />
-        <Work />
+        <About />
         <Bio />
         <Hackathons />
         <Love />

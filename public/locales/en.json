@@ -1,0 +1,36 @@
+{
+  "HomePage": {
+    "Hello": {
+      "text": "Hello, I'm a backend developer based in Moscow!"
+    },
+    "Menu": {
+      "name": "Nikolay Varlamov",
+      "source": "Source"
+    },
+    "Personal": {
+      "name": "Nikolay Varlamov",
+      "about": "Software engineer, hackathon enthusiast"
+    },
+    "About": {
+      "title": "About",
+      "text": "Nick is a backend developer based in Moscow, specializing in Golang, with a newfound passion for frontend development. He has been coding since middle school and, for over 6 years, has been crafting innovative solutions. He has also competed in three hackathons, securing prize-winning positions each time. Beyond coding, he is an avid traveler with a love for Japan and is currently learning Japanese. He enjoys collecting vinyl records and shooting with a film camera."
+    },
+    "Bio": {
+      "title": "Bio",
+      "born": "Born in Moscow, Russia",
+      "uni": "Completed a bachelor's program in applied informatics at the Bauman Moscow State Technical University",
+      "qoollo": "Worked at Qoollo",
+      "smkt": "Working at Samokat.tech"
+    },
+    "Love": {
+      "title": "I ♥",
+      "text": "Music, traveling, Japanese language, film photography, vinyl records"
+    },
+    "Web": {
+      "title": "On the web"
+    },
+    "Footer": {
+      "text": "© 2024 Nikolay Varlamov. All Rights Reserved"
+    }
+  }
+}

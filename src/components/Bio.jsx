@@ -1,12 +1,15 @@
 import { Box } from "@chakra-ui/react";
 import TitledLayout from "./layouts/titled";
+import { useTranslations } from "next-intl";
 
 function Bio() {
+  const t = useTranslations("HomePage.Bio");
+
   return (
-    <TitledLayout title="Bio">
+    <TitledLayout title={t("title")}>
       <Box className="mb-4 flex">
         <Box className="mr-5 font-bold">2001</Box>
-        <Box>Born in Moscow, Russia</Box>
+        <Box>{t("born")}</Box>
       </Box>
 
       <Box className="mb-4 flex">
@@ -14,10 +17,7 @@ function Bio() {
           <Box className="font-bold">2019-</Box>
           <Box className="font-bold">2023</Box>
         </Box>
-        <Box>
-          Completed a bachelor&apos;s program in applied informatics at the
-          Bauman Moscow State Technical University
-        </Box>
+        <Box>{t("uni")}</Box>
       </Box>
 
       <Box className="mb-4 flex">
@@ -25,7 +25,7 @@ function Bio() {
           <Box className="font-bold">2021-</Box>
           <Box className="font-bold">2022</Box>
         </Box>
-        <Box>Worked at Qoollo</Box>
+        <Box>{t("qoollo")}</Box>
       </Box>
 
       <Box className="flex">
@@ -33,7 +33,7 @@ function Bio() {
           <Box className="font-bold">2022-</Box>
           <Box className="font-bold">now</Box>
         </Box>
-        <Box>Working at Samokat.tech</Box>
+        <Box>{t("smkt")}</Box>
       </Box>
     </TitledLayout>
   );

@@ -1,8 +1,8 @@
 import { useTranslations } from "next-intl";
 import TitledLayout from "./layouts/titled";
 
-function Love() {
-  const t = useTranslations("HomePage.Love");
+function About() {
+  const t = useTranslations("HomePage.About");
 
   return (
     <TitledLayout title={t("title")}>
@@ -11,4 +11,4 @@ function Love() {
   );
 }
 
-export default Love;
+export default About;

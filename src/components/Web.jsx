@@ -5,10 +5,13 @@ import GithubIcon from "./icons/githubIcon";
 import InstaIcon from "./icons/instaIcon";
 import TelegramIcon from "./icons/telegramIcon";
 import { Box } from "@chakra-ui/react";
+import { useTranslations } from "next-intl";
 
 function Web() {
+  const t = useTranslations("HomePage.Web");
+
   return (
-    <TitledLayout title="On the web">
+    <TitledLayout title={t("title")}>
       <Box>
         <Link
           isExternal={true}

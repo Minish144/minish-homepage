@@ -1,10 +1,13 @@
 import { Box, Container } from "@chakra-ui/react";
+import { useTranslations } from "next-intl";
 
 function Hello() {
+  const t = useTranslations("HomePage.Hello");
+
   return (
     <Container>
       <Box className="text-center bg-gray_custom p-3 mb-5 rounded-lg">
-        Hello, I&apos;m a backend developer based in Moscow!
+        {t("text")}
       </Box>
     </Container>
   );

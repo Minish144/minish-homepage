@@ -1,6 +1,7 @@
 import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 import { Providers } from "./providers";
+import { getLocale, getMessages } from "next-intl/server";
 
 export const metadata = {
   title: "Nikolay Varlamov - Homepage",
@@ -50,13 +51,20 @@ export const viewport = {
 
 const gaId = process.env.GOOGLE_MEASUREMENT_ID;
 
-export default function RootLayout({ children }) {
+async function RootLayout({ children }) {
+  const locale = await getLocale();
+  const messages = await getMessages();
+
   return (
-    <html lang="en">
+    <html lang={locale}>
       <body className={`bg-base text-base`}>
-        <Providers>{children}</Providers>
+        <Providers messages={messages} locale={locale}>
+          {children}
+        </Providers>
       </body>
       <GoogleAnalytics gaId={gaId} />
     </html>
   );
 }
+
+export default RootLayout;
