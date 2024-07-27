@@ -6,8 +6,6 @@ const ThemeButton = () => {
   const [mounted, setMounted] = useState(false);
   const { setTheme, resolvedTheme } = useTheme();
 
-  console.log("theme", resolvedTheme);
-
   useEffect(() => {
     setMounted(true);
   }, []);
@@ -18,7 +16,7 @@ const ThemeButton = () => {
     <Button
       size={"xs"}
       onClick={() => {
-        setTheme(resolvedTheme === "light" ? "dark" : "light");
+        setTheme(resolvedTheme === "dark" ? "light" : "dark");
       }}
       colorScheme={resolvedTheme === "dark" ? "purple" : "yellow"}
       className="mr-1"
