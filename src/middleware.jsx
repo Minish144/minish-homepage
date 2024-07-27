@@ -3,7 +3,6 @@ import { locales, defaultLocale, defaultMW } from "./i18n";
 
 export default createMiddleware({
   localeDetection: false,
-  localePrefix: "never",
   locales: locales,
   defaultLocale: defaultLocale,
 });
