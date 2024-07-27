@@ -1,7 +1,8 @@
 import { Link } from "@chakra-ui/next-js";
-import { Container } from "@chakra-ui/react";
+import { Box, Container } from "@chakra-ui/react";
 import GithubIcon from "./icons/githubIcon";
 import { useTranslations } from "next-intl";
+import LanguageButton from "./LanguageButton";
 
 function Menu() {
   const t = useTranslations("HomePage.Menu");
@@ -15,14 +16,17 @@ function Menu() {
       >
         {t("name")}
       </Link>
-      <Link
-        href="https://github.com/Minish144/minish-homepage"
-        isExternal={true}
-        className="flex items-center ml-2 hover:text-gray-400"
-      >
-        <GithubIcon />
-        <span className="ml-1.5">{t("source")}</span>
-      </Link>
+      <Box className="flex items-center gap-0.5">
+        <LanguageButton />
+        <Link
+          href="https://github.com/Minish144/minish-homepage"
+          isExternal={true}
+          className="flex items-center ml-2 hover:text-gray-400"
+        >
+          <GithubIcon />
+          <span className="ml-1.5">{t("source")}</span>
+        </Link>
+      </Box>
     </Container>
   );
 }
