@@ -1,10 +1,13 @@
 import { Box } from "@chakra-ui/react";
 import TitledLayout from "./layouts/titled";
 import { Image } from "@chakra-ui/next-js";
+import { useTranslations } from "next-intl";
 
 function Hackathons() {
+  const t = useTranslations("HomePage.Hackathons");
+
   return (
-    <TitledLayout title="Hackathons">
+    <TitledLayout title={t("title")}>
       <Box className="flex flex-col md:flex-row md:items-center items-start justify-between">
         <Box
           borderColor="whiteAlpha.800"

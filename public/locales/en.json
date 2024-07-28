@@ -22,10 +22,14 @@
       "qoollo": "Worked at Qoollo",
       "smkt": "Working at Samokat.tech"
     },
+    "Hackathons": {
+      "title": "Hackathons"
+    },
     "Love": {
       "title": "I ♥",
       "text": "Music, traveling, Japanese language, film photography, vinyl records"
     },
+
     "Web": {
       "title": "On the web"
     },
